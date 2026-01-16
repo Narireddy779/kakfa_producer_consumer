@@ -25,6 +25,6 @@ public class KafkaController {
     @PostMapping("/users")
     public ResponseEntity<String> publishUserMessage(@RequestBody UserDTO userDTO) {
         kafkaMessagePublisher.sendUserMessage(userDTO);
-        return ResponseEntity.status(HttpStatus.OK).body("User Message Published Successfully...");
+        return ResponseEntity.status(HttpStatus.OK).body("User Message Published Successfully created done......");
     }
 }
